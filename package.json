@@ -13,7 +13,7 @@
 
     "author": "Alex Sav",
     "license": "ISC",
-
+    "figma" : "https://www.figma.com/design/4f16ErerbvTZmdji2miwyB/Smartwatchlandingpage?node-id=93-12&node-type=frame&t=wbcMVWOWpkHjZxRd-0",
     "devDependencies": {
         "@babel/core": "^7.18.5",
         "@babel/preset-env": "^7.18.2",
