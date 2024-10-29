@@ -1,0 +1,89 @@
+@import '../../../assets/global-style/mixin';
+
+.cell {
+    &--mb24 {
+        margin-bottom: 24px;
+    }
+
+    &__name {
+        position: relative;
+        display: block;
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 24px;
+        color: var(--text-primery-color);
+        background-color: transparent;
+        transition: 0.5s;
+
+        @include before_768 {
+            font-size: 14px;
+        }
+    }
+
+    &__content {
+        height: 100%;
+        position: relative;
+        padding: 12px 24px;
+        border: 1px solid var(--text-primery-color);
+        background-color: transparent;
+        border-radius: 16px;
+        transition: 0.5s;
+    }
+
+    &__error-message {
+        margin-top: 6px;
+        font-size: 16px;
+        line-height: 140%;
+        color: red;
+        display: none;
+    }
+
+    &__identificator {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    &__icon {
+        display: block;
+    }
+
+    &.js-focus {
+        .cell__content {
+            border-color: var(--accent-primery-color);
+        }
+    }
+
+    &.js-cell-error {
+        .cell__content {
+            border-color: var(--error-primery-color);
+        }
+    }
+
+    &.js-cell-disabled {
+        .cell__content {
+            background-color: var(--calm-color-1);
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+    }
+
+    &.js-cell-hidden {
+        display: none;
+    }
+
+    &--subscription {
+        flex-grow: 1;
+        margin-right: 16px;
+
+        .cell__name {
+            margin-bottom: 0;
+        }
+        .cell__content {
+            padding: 16px 24px;
+            border-color: var(--supportive-primery-color);
+            background-color: var(--color-white);
+        }
+    }
+}

@@ -1,0 +1,167 @@
+@import '../../../assets/global-style/mixin';
+
+.title {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--color-black);
+
+    &--fs_10 {
+        font-size: 10px;
+    }
+
+    &--fs_16 {
+        font-size: 16px;
+    }
+
+    &--fs_18 {
+        font-size: 18px;
+    }
+
+    &--fs_20 {
+        font-size: 20px;
+    }
+
+    &--fs_21 {
+        font-size: 21px;
+    }
+
+    &--fs_21_700 {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    &--fs_22 {
+        font-size: 22px;
+    }
+
+    &--fs_24 {
+        font-size: 24px;
+    }
+
+    &--fs_30 {
+        font-size: 30px;
+    }
+
+    &--fs_30_400 {
+        font-size: 30px;
+        font-weight: 400;
+
+        @include before_1366 {
+            font-size: 26px;
+        }
+    }
+
+    &--fs_30_700 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &--fs_32 {
+        font-size: 32px;
+
+        @include before_1024 {
+            font-size: 28px !important;
+        }
+
+        @include before_480 {
+            font-size: 21px !important;
+        }
+    }
+
+    &--fs_34 {
+        font-size: 34px;
+    }
+
+    &--fs_36 {
+        font-size: 36px;
+
+        @include before_1024 {
+            font-size: 28px !important;
+        }
+
+        @include before_480 {
+            font-size: 22px !important;
+        }
+    }
+
+    &--fs_38 {
+        font-size: 38px;
+    }
+
+    &--fs_38 {
+        font-size: 38px;
+    }
+
+    &--fs_40 {
+        font-size: 40px;
+    }
+
+    &--fs_40_750 {
+        font-size: 40px;
+        font-weight: 750;
+    }
+
+    &--fs_40_400 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    &--fs_50 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    &--fs_114_300 {
+        font-size: 114px;
+        font-weight: 300;
+
+        @include before_1366 {
+            font-size: 106px;
+        }
+    }
+
+    &--black {
+        color: var(--color-black);
+    }
+
+    &--black-2 {
+        color: var(--color-black-2);
+    }
+
+    &--white {
+        color: var(--color-white);
+    }
+
+    &--black-3 {
+        color: var(--color-black-3);
+    }
+
+    &--black-4 {
+        color: var(--color-black-4);
+    }
+
+    &--green-1 {
+        color: var(--color-green1);
+    }
+
+    &--green-3 {
+        color: var(--color-green3);
+    }
+
+    &--green-5 {
+        color: var(--color-green5);
+    }
+
+    &--gray-3 {
+        color: var(--color-gray3);
+    }
+
+    &--gray-2 {
+        color: var(--color-gray2);
+    }
+
+    &--blue {
+        color: var(--color-blue);
+    }
+}

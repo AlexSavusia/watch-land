@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'SBSansDisplay';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/SBSansDisplay-Light.woff2') format('woff2'), url('../fonts/SBSansDisplay-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/SBSansDisplay-Regular.woff2') format('woff2'), url('../fonts/SBSansDisplay-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/SBSansDisplay-SemiBold.woff2') format('woff2'), url('../fonts/SBSansDisplay-SemiBold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/SBSansDisplay-Bold.woff2') format('woff2'), url('../fonts/SBSansDisplay-Bold.woff') format('woff');
+    font-display: swap;
+}

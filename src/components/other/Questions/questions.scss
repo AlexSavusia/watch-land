@@ -1,0 +1,43 @@
+.questions {
+    &__container {
+        padding: 60px 0 160px 0;
+
+        @include before_480 {
+            padding: 60px 0 50px 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 100px;
+
+        @include before_480 {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__likes-block {
+        display: flex;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    &__likes-statuses {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__likes-status {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__icon {
+        cursor: pointer;
+    }
+
+    &__text-list {
+        list-style-type: disc;
+        margin: 5px 0 5px 17px;
+    }
+}

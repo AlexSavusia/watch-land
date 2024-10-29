@@ -1,0 +1,165 @@
+@import '../../../assets/global-style/mixin';
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-black);
+
+    &--fs_12 {
+        font-size: 12px;
+    }
+
+    &--fs_16 {
+        font-size: 16px;
+    }
+
+    &--fs_16_300 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &--fs_17 {
+        font-size: 17px;
+    }
+
+    &--fs_18 {
+        font-size: 18px;
+
+        @include before_1366 {
+            font-size: 16px;
+        }
+
+        @include before_480 {
+            font-size: 14px;
+        }
+    }
+
+    &--fs_18_600 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &--fs_19 {
+        font-size: 19px;
+    }
+
+    &--fs_26 {
+        font-size: 26px;
+
+        @include before_480 {
+            font-size: 20px;
+        }
+    }
+
+    &--fs_20 {
+        font-size: 20px;
+
+        @include before_1366 {
+            font-size: 18px;
+        }
+    }
+
+    &--fs_20_300 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &--fs_20_600 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &--fs_22_600 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &--fs_24 {
+        font-size: 24px;
+    }
+
+    &--fs_26_300 {
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    &--fs_24_600 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &--fs_64_300 {
+        font-size: 64px;
+        font-weight: 300;
+    }
+
+    &--fs_32_300 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    &--fs_36 {
+        font-size: 36px;
+
+        @include before_1024 {
+            font-size: 28px !important;
+        }
+
+        @include before_480 {
+            font-size: 22px !important;
+        }
+    }
+
+    &--white {
+        color: var(--color-white);
+    }
+
+    &--black-3 {
+        color: var(--color-black-3);
+    }
+
+    &--black-4 {
+        color: var(--color-black-4);
+    }
+
+    &--green-1 {
+        color: var(--color-green1);
+    }
+
+    &--green-2 {
+        color: var(--color-green2);
+    }
+
+    &--green-3 {
+        color: var(--color-green3);
+    }
+
+    &--green-5 {
+        color: var(--color-green5);
+    }
+
+    &--blue {
+        color: var(--color-blue);
+    }
+
+    &--gray-4 {
+        color: var(--color-gray4);
+    }
+
+    &--gray-3 {
+        color: var(--color-gray3);
+    }
+
+    &--gray {
+        color: var(--color-gray);
+    }
+
+    &--half-gray {
+        color: var(--color-half-gray3);
+    }
+
+    &--red {
+        color: var(--color-red);
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../../assets/global-style/mixin';
+
+.wrapper {
+    width: 100%;
+    max-width: 1480px;
+    // max-width: 1430px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include before_1024 {
+        padding: 0 25px;
+    }
+
+    @include before_768 {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,12 @@
+.link {
+    &--green {
+        text-decoration: none;
+        color: var(--color-green5);
+    }
+
+    &--underline {
+        text-decoration: none;
+        color: var(--color-green2);
+        border-bottom: 1px solid var(--color-green2);
+    }
+}

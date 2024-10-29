@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+	</head>
+	<body>
+		<!-- Обычное состояние -->
+		<button type="button" class="button-text">
+			<div class="button-text__flex">
+				<div class="button-text__el">Нажми меня</div>
+			</div>
+		</button>
+
+		<!-- Заблокирована -->
+		<button type="button" class="button-text disabled">
+			<div class="button-text__flex">
+				<div class="button-text__el">Нажми меня</div>
+			</div>
+		</button>
+
+		<!-- Кнопка как ссылка -->
+		<a href="#" class="button-text">
+			<div class="button-text__flex">
+				<div class="button-text__el">Нажми меня</div>
+			</div>
+		</a>
+
+		<!-- Кнопка с иконкой -->
+		<button type="button" class="button-text">
+			<div class="button-text__flex">
+				<div class="button-text__el">Нажми меня</div>
+				<div class="button-text__el">
+					<svg class="button-text__icon" width="17" height="8">
+						<use href="./assets/sprite.svg#icon-arrow-forward"></use>
+					</svg>
+				</div>
+			</div>
+		</button>
+	</body>
+</html>

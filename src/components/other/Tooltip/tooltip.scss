@@ -1,0 +1,122 @@
+.tooltip {
+    &__container {
+        position: relative;
+
+        &--inline {
+            position: relative;
+            display: inline-block;
+
+            @include before_480 {
+                position: static;
+            }
+        }
+    }
+
+    &__icon {
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: rgba(206, 209, 213, 0.5);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    &__string {
+        border-bottom: 1px solid var(--color-black);
+        cursor: pointer;
+
+        &--green {
+            color: var(--color-green5);
+            border-bottom: none;
+            transition: 0.5s;
+        }
+
+		&--black {
+			color: var(--color-black);
+			border-bottom: none;
+		}
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 20;
+        padding: 24px 30px;
+        background: var(--color-black);
+        border-radius: 5px;
+        min-width: 240px;
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+
+        &--top {
+            bottom: 24px;
+            left: -50%;
+        }
+
+        &--bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            top: 35px;
+            left: 0;
+            right: 0;
+            min-width: 300px;
+            z-index: 10;
+
+            @include before_480 {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                top: 50%;
+            }
+        }
+
+        &--top-icon {
+            bottom: 24px;
+            left: -100px;
+        }
+    }
+
+    &__string:hover + &__content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__content:hover {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__string--green:hover {
+        color: var(--color-green2);
+        border-bottom: 1px solid var(--color-green2);
+    }
+
+    &__icon:hover + &__content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__icon:hover {
+        background: #243440;
+    }
+
+    &__icon:hover &__question {
+        fill: var(--color-white);
+    }
+
+    &__link {
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-green5);
+
+        &--2 {
+            border-bottom: 1px solid var(--color-green5);
+        }
+    }
+}

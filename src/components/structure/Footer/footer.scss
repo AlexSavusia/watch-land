@@ -1,0 +1,27 @@
+.footer {
+    background: #333f48;
+
+    &__container {
+        padding: 136px 0;
+
+        @include before_480 {
+            padding: 50px 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include before_480 {
+            gap: 20px;
+        }
+    }
+
+    &__disclaimer {
+        @include before_480 {
+            font-size: 12px !important;
+        }
+    }
+}

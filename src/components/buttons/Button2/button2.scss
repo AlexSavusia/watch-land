@@ -1,0 +1,20 @@
+@import '../../../assets/global-style/mixin';
+
+.button-2 {
+    padding: 14px 52px;
+    background: var(--color-green5);
+    box-shadow: 0px 8px 16px rgba(36, 201, 33, 0.2);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    &__link {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+	&--padding14-57 {
+		padding: 14px 57px;
+		background: #15B015;
+	}
+}

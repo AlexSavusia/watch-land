@@ -1,0 +1,188 @@
+.work {
+    background: #efefef;
+
+    &__container {
+        padding-top: 68px;
+        padding-bottom: 68px;
+        border-bottom: 1px solid #dbdddf;
+
+        @include before_768 {
+            padding: 100px 0 40px 0;
+        }
+
+        @include before_480 {
+            padding: 40px 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 64px;
+    }
+
+    &__card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+
+        @include before_768 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        position: relative;
+        background: var(--color-half-white2);
+        border: none;
+        border-radius: 24px;
+        padding: 60px;
+        border: 1px solid;
+        border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+        @include before_1366 {
+            padding: 40px 30px;
+        }
+
+        @include before_480 {
+            padding: 22px 23px;
+        }
+    }
+
+    &__card-top {
+        @include before_480 {
+            gap: 32px;
+        }
+    }
+
+    &__content-text {
+        @include before_1024 {
+            font-size: 18px !important;
+        }
+
+        @include before_480 {
+            font-size: 15px !important;
+        }
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+
+        @include before_1366 {
+            gap: 49px;
+        }
+
+        @include before_480 {
+            gap: 27px !important;
+        }
+    }
+
+    &__card-title {
+        @include before_1024 {
+            font-size: 24px !important;
+        }
+
+        @include before_480 {
+            font-size: 19px !important;
+        }
+    }
+
+    &__card-number {
+        @include before_1024 {
+            font-size: 48px !important;
+        }
+
+        @include before_480 {
+            font-size: 26px !important;
+        }
+
+        // @include before_480 {
+        //     font-size: 48px !important;
+        // }
+    }
+
+    // &__card__bottom {
+    //     position: relative;
+    // }
+
+    &__card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 82px;
+
+        @include before_1200 {
+            gap: 12px;
+        }
+
+        @include before_480 {
+            gap: 33px;
+        }
+    }
+
+    &__addition {
+        @include before_1024 {
+            font-size: 18px !important;
+        }
+
+        @include before_480 {
+            font-size: 15px !important;
+        }
+    }
+
+    &__addition:first-child {
+        margin-bottom: 12px;
+
+        @include before_480 {
+            margin-bottom: 5px !important;
+        }
+    }
+
+    &__addition:not(:first-child) {
+        margin-bottom: 6px;
+    }
+
+    &__addition-marker {
+        display: inline-flex;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        margin-right: 15px;
+        background: var(--color-green5);
+
+        @include before_480 {
+            margin-right: 4px !important;
+        }
+    }
+
+    &__separator-1 {
+        @include before_1200 {
+            display: none;
+        }
+    }
+
+    &__separator-2 {
+        display: none;
+        @include before_1200 {
+            display: block;
+        }
+    }
+
+    &__separator-3 {
+        @include before_1024 {
+            display: none;
+        }
+    }
+
+    &__separator-4 {
+        display: none;
+
+        @include before_768 {
+            display: block;
+        }
+
+        @include before_480 {
+            display: none;
+        }
+    }
+}

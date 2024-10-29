@@ -1,0 +1,181 @@
+.advantages {
+    background: #efefef;
+
+    &__container {
+        padding-top: 68px;
+        padding-bottom: 68px;
+        border-bottom: 1px solid #dbdddf;
+
+        @include before_480 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 64px;
+    }
+
+    &__card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+
+        @include before_1024 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        position: relative;
+        background: rgba(0, 173, 238, 0.05);
+        border-radius: 24px;
+        border: 1px solid;
+        border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+        @include before_768 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__card-content {
+        padding: 56px 40px;
+
+        @include before_768 {
+            flex-grow: 1;
+        }
+
+        @include before_480 {
+            padding: 28px 23px;
+        }
+
+        &.py0 {
+            padding: 56px 40px 0 40px;
+
+            @include before_1024 {
+                padding: 56px 40px 43px 40px;
+            }
+
+            @include before_768 {
+                flex-grow: 1;
+            }
+
+            @include before_480 {
+                padding: 28px 23px;
+            }
+        }
+    }
+
+    &__gradient {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 23px;
+    }
+
+    &__gradient-img {
+        border-radius: 0 0 23px 0;
+    }
+
+    &__img-box {
+        position: absolute;
+        max-width: 202px;
+        max-height: 181px;
+        bottom: 24px;
+        right: 24px;
+
+        @include before_1024 {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__column-2 {
+        grid-column: 2 / 4;
+    }
+
+    &__row-2 {
+        position: relative;
+        grid-row: 2 / 4;
+    }
+
+    &__icon {
+        margin-bottom: 35px;
+
+        @include before_480 {
+            display: block;
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &__card-title {
+        margin-bottom: 12px;
+
+        @include before_480 {
+            font-size: 16px !important;
+        }
+    }
+
+    &__card-text {
+        @include before_480 {
+            font-size: 15px !important;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__addition-marker {
+        display: inline-flex;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        margin-right: 15px;
+        background: var(--color-green5);
+
+        @include before_480 {
+            margin-right: 8px;
+        }
+    }
+
+    &__separator-1 {
+        @include before_1200 {
+            display: none;
+        }
+    }
+
+    &__separator-2 {
+        display: none;
+
+        @include before_1024 {
+            display: block;
+        }
+
+        @include before_480 {
+            display: none;
+        }
+    }
+
+    &__separator-3 {
+        @include before_480 {
+            display: none;
+        }
+    }
+}

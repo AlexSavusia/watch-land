@@ -1,0 +1,354 @@
+.content {
+    &__box {
+        display: none;
+        background: var(--color-half-white2);
+        border-radius: 24px;
+
+		@include before_1200 {
+			width: 1350px;
+			max-height: 450px;
+			// transform: scale(0.6);
+		}
+    }
+
+    &__section {
+        background: rgba(255, 255, 255, 0.3);
+        padding: 40px 60px;
+        border-radius: 24px;
+
+        &--bottom {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 0 60px 30px 60px;
+            border-radius: 0px 0px 24px 24px;
+        }
+
+        &--bottom-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 24px 60px 80px 60px;
+        }
+
+        &--p_0 {
+            padding: 0;
+        }
+
+        @include before_480 {
+            padding: 20px 60px;
+        }
+    }
+
+    &__section-title {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+        width: 30%;
+
+        @include before_768 {
+            width: 24%;
+        }
+    }
+
+    &__section-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 35px 0;
+
+        &--p_0 {
+            padding: 0;
+        }
+
+        &--mb_40 {
+            margin-bottom: 40px;
+        }
+
+        @include before_768 {
+            padding: 20px 0;
+        }
+    }
+
+    &__section-item:not(:last-child) {
+        border-bottom: 1px solid rgba(129, 142, 158, 0.3);
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__info-title-inner {
+        margin-bottom: 20px;
+    }
+
+    &__flex-container {
+        display: flex;
+        gap: 14px;
+        flex-grow: 1;
+    }
+
+	&__block {
+		display: flex;
+		align-items: center;
+		// justify-content: center;
+		min-width: 199px;
+		min-height: 112px;
+		gap: 24px;
+		padding: 25px;
+		background: #ffffff;
+		border: 1px solid rgba(129, 142, 158, 0.2);
+		border-radius: 4px;
+
+        &--w_auto {
+            width: auto;
+        }
+
+		&--w-278 {
+			width: 300px;
+		}
+
+        &--grow-1 {
+            flex-grow: 1;
+        }
+
+        &--bg-1 {
+            background: none;
+        }
+
+        &--border-blue {
+            border: none;
+            border-left: 4px solid rgba(0, 173, 238, 1);
+        }
+
+		&--border-green {
+			border: none;
+			border-left: 4px solid rgba(38, 201, 60, 1);
+		}
+
+		@include before_768 {
+			min-width: 199px;
+			min-height: 80px;
+			padding: 17px;
+		}
+	}
+
+    &__block-2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 112px;
+        gap: 24px;
+        padding: 25px;
+    }
+
+    &__block-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+
+        &--column {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+        }
+
+        &--text {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__table {
+        display: flex;
+    }
+
+    &__table-column {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    &__table-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 35px;
+        text-align: center;
+        border-left: 1px solid rgba(129, 142, 158, 0.1);
+
+        &--pink {
+            background: rgba(248, 238, 245, 1);
+            // background: none;
+        }
+
+        &--green {
+            // background: #eef7f6;
+            background: none;
+        }
+
+        &--yellow {
+            background: rgba(128, 246, 124, 0.2);
+            // background: none;
+        }
+
+        &--no-border {
+            border: none;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        @include before_768 {
+            padding: 16px 18px;
+        }
+    }
+
+    &__info-container {
+        display: flex;
+        // background: rgba(38, 201, 60, 0.4);
+
+        &--blue {
+            background: rgba(0, 173, 238, 0.2);
+        }
+
+        &--blue2 {
+            background: #eef3ff;
+        }
+
+        &--yellow {
+            background: #efffef;
+        }
+
+        &--white {
+            background: var(--color-white);
+        }
+
+        &--column {
+            flex-direction: column;
+        }
+    }
+
+    &__info-inner {
+        display: flex;
+    }
+
+    &__info-title {
+        padding: 24px 60px;
+
+        &--blue {
+            background: rgba(0, 173, 238, 0.2);
+        }
+
+		&--blue-2 {
+			background: rgba(238, 243, 255, 1);
+		}
+
+		&--green {
+			background: rgba(38, 201, 60, 0.2);
+		}
+
+		&--half-green {
+			background: rgba(62, 227, 148, 0.4);
+		}
+	}
+
+	&__info-1 {
+		// background: rgba(38, 201, 60, 0.6);
+		padding: 13px 147px 13px 60px;
+
+		&--blue {
+			background: rgba(0, 173, 238, 0.3);
+		}
+
+		&--blue-2 {
+			background: linear-gradient(0deg, #dadff7, #dadff7), linear-gradient(0deg, #f4e8fe, #f4e8fe), #b3ffdb;
+		}
+
+		&--green {
+			background: rgba(38, 201, 60, 0.6);
+		}
+
+		&--half-green {
+			background: #2baa7a;
+		}
+
+		&--yellow {
+			background: #d4ffd4;
+		}
+
+		@include before_480 {
+			padding: 13px 42px 13px 60px;
+		}
+	}
+
+	&__info-2 {
+		padding: 13px 60px;
+		flex-grow: 1;
+
+		&--blue {
+			background: rgba(0, 173, 238, 0.25);
+		}
+
+		&--blue-2 {
+			background: linear-gradient(0deg, #e9ecfa, #e9ecfa), linear-gradient(0deg, #f6effc, #f6effc), rgba(179, 255, 219, 0.4);
+		}
+
+		&--green {
+			background: rgba(38, 201, 60, 0.4);
+		}
+
+		&--half-green {
+			background: rgba(62, 227, 148, 0.6);
+		}
+	}
+
+	&__column-title {
+		margin-left: 20px;
+		margin-bottom: 40px;
+
+		&--blue {
+			color: #49bdff;
+		}
+
+		&--green {
+			color: #3ee394;
+		}
+	}
+
+	&__flex-wrapper {
+		display: flex;
+		gap: 20px;
+		padding: 30px 40px 80px 40px;
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 0px 0px 24px 24px;
+
+		&--gray {
+			background: rgba(255, 255, 255, 0.3);
+		}
+
+		@include before_480 {
+			padding: 30px 40px 20px 40px;
+		}
+	}
+
+	&__flex-inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 14px;
+
+		&--left {
+			width: 35%;
+		}
+
+		&--column {
+			width: 30%;
+		}
+
+		&--row {
+			flex-direction: row;
+		}
+	}
+}

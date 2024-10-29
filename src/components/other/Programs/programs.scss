@@ -1,0 +1,258 @@
+.programs {
+	background: #efefef;
+	&__example-detail {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+	&__container {
+		padding-top: 68px;
+		padding-bottom: 138px;
+
+		@include before_480 {
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 64px;
+	}
+
+	&__subtitle {
+		margin-bottom: 44px;
+
+		@include before_480 {
+			font-size: 16px !important;
+		}
+	}
+
+	&__subtitle-2 {
+		margin: 26px 0;
+
+		@include before_480 {
+			font-size: 16px !important;
+		}
+	}
+
+	&__example {
+		padding: 60px 80px;
+		background: rgba(0, 173, 238, 0.05);
+		margin-bottom: 32px;
+		border-radius: 32px;
+		border: 1px solid;
+		border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+		@include before_768 {
+			padding: 60px 32px;
+		}
+
+		@include before_480 {
+			padding: 35px;
+		}
+	}
+
+	&__example-content {
+		display: grid;
+		grid-template-columns: 1.6fr 1fr;
+		// grid-template-columns: 65% 35%;
+
+		@include before_1200 {
+			grid-template-columns: 4fr 1fr;
+		}
+
+		@include before_1024 {
+			grid-template-columns: 1fr;
+		}
+
+		&--right {
+			align-self: center;
+			justify-self: center;
+
+			@include before_1024 {
+				display: none;
+			}
+		}
+	}
+
+	&__example-img-box {
+		max-width: 231px;
+		max-height: 196px;
+
+		@include before_1200 {
+			max-width: 163px;
+			max-height: 138px;
+		}
+	}
+
+	&__example-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&__example-title {
+		margin-bottom: 4px;
+
+		&--mb_40 {
+			margin-bottom: 40px;
+		}
+
+		@include before_480 {
+			font-size: 21px !important;
+		}
+	}
+
+	&__example-subtitle {
+		margin-bottom: 88px;
+
+		@include before_480 {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__example-details {
+		display: flex;
+		gap: 70px;
+		margin-bottom: 32px;
+
+		@include before_768 {
+			gap: 32px;
+		}
+
+		@include before_480 {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&__detail-sum {
+		@include before_768 {
+			font-size: 24px !important;
+		}
+
+		@include before_480 {
+			font-size: 20px !important;
+		}
+	}
+
+	&__steps {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 32px;
+		margin-bottom: 34px;
+
+		@include before_768 {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__step {
+		position: relative;
+		padding: 60px 60px 76px 60px;
+		background: rgba(0, 173, 238, 0.05);
+		border-radius: 40px;
+		border: 1px solid;
+		border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+		@include before_1024 {
+			padding: 32px;
+		}
+
+		@include before_480 {
+			padding: 30px 30px 40px 30px;
+		}
+	}
+
+	&__step-number {
+		margin-bottom: 30px;
+	}
+
+	&__step-title {
+		margin-bottom: 16px;
+	}
+
+	&__exception {
+		margin-bottom: 32px;
+
+		@include before_1024 {
+			text-align: center;
+		}
+	}
+
+	&__exceptionAugust {
+		margin-top: 104px;
+		backdrop-filter: blur(52px);
+		background: rgba(255, 255, 255, 0.5);
+		border-radius: 32px;
+		padding: 40px;
+		.text--bold {
+			font-weight: 600;
+		}
+		@include before_1024 {
+			// text-align: center;
+			margin-top: 80px;
+			padding: 32px;
+		}
+	}
+
+	&__documents {
+		display: flex;
+		justify-content: center;
+		gap: 69px;
+
+		@include before_480 {
+			flex-direction: column;
+			width: 56%;
+			margin: 0 auto;
+			gap: 26px;
+		}
+	}
+
+	&__document {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link {
+		text-decoration: none;
+		margin-left: 12px;
+
+		@include before_480 {
+			font-size: 14px !important;
+		}
+	}
+
+	&__separator-1 {
+		@include before_1200 {
+			display: none;
+		}
+	}
+
+	&__separator-2 {
+		display: none;
+
+		@include before_1024 {
+			display: block;
+		}
+	}
+
+	&__separator-3 {
+		@include before_768 {
+			display: none;
+		}
+
+		@include before_480 {
+			display: block;
+		}
+
+		&--480-none {
+			@include before_480 {
+				display: none;
+			}
+		}
+	}
+}

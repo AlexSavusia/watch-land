@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>Новый проект</title>
+	</head>
+	<body>
+		<div class="grid">
+			<header class="header">
+				<div class="wrapper">
+					<div class="header__text">Наши контакты!</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="some-block">
+					<div class="wrapper">
+						Do it
+						<button type="button" class="button js-show-popup-button">
+							<div class="button__flex">
+								<div class="button__el">Нажми меня</div>
+							</div>
+						</button>
+						<button type="button" class="button-text">
+							<div class="button-text__flex">
+								<div class="button-text__el">Нажми меня</div>
+							</div>
+						</button>
+						<div class="tabs js-tabs" data-tab-name="clientCategory">
+							<div class="tabs__list">
+								<div class="tabs__name js-tabs-name active">Страхователь</div>
+								<div class="tabs__name js-tabs-name">Застрахованный</div>
+								<div class="tabs__name js-tabs-name">Действующий Выгодоприобретатель</div>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__item js-tabs-item">Содержание 1 ого</div>
+								<div class="tabs__item js-tabs-item">Содержание 2 ого</div>
+								<div class="tabs__item js-tabs-item">Содержание 3 ого</div>
+							</div>
+						</div>
+						<div class="dropdown js-dropdown">
+							<ul class="dropdown__list js-dropdown-list">
+								<li class="dropdown__item">
+									<div class="dropdown__title js-dropdown__title">
+										<div class="dropdown__name">
+											<div class="dropdown__number">1.</div>
+											<div class="dropdown__text">Накопления</div>
+										</div>
+										<div class="dropdown__arrow">
+											<svg class="dropdown__icon js-dropdown__rotate" width="12" height="8">
+												<use href="./assets/sprite.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="dropdown__content js-dropdown__content">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est optio dolorem vel inventore obcaecati perferendis quo blanditiis
+										necessitatibus placeat! Expedita corrupti laboriosam asperiores quis quos maiores unde aliquid, nisi repudiandae.
+									</div>
+								</li>
+								<li class="dropdown__item">
+									<div class="dropdown__title js-dropdown__title">
+										<div class="dropdown__name">
+											<div class="dropdown__number">2.</div>
+											<div class="dropdown__text">Инвестиции</div>
+										</div>
+										<div class="dropdown__arrow">
+											<svg class="dropdown__icon js-dropdown__rotate" width="12" height="8">
+												<use href="./assets/sprite.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="dropdown__content js-dropdown__content">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus mollitia eius iure architecto velit ex sapiente
+										dolores? Exercitationem at accusantium doloribus modi officiis tempora repellat dolorum dignissimos quo. Excepturi!
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer__text">2022 год</div>
+				</div>
+			</footer>
+		</div>
+		<div id="example" class="popup js-popup">
+			<div class="popup__container">
+				<div class="popup__content js-popup-content">
+					<div class="popup__close js-popup-close">
+						<svg class="popup__close-icon" width="22" height="22">
+							<use xlink:href="/assets/sprite.svg#closed"></use>
+						</svg>
+					</div>
+					<h3 class="title">Заголовок</h3>
+					<p class="text">Текст</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

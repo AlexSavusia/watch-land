@@ -1,0 +1,49 @@
+.contract {
+    background: var(--color-half-white2);
+
+    &__container {
+        position: relative;
+        padding: 150px 0 0 0;
+        height: 934px;
+
+        @include before_480 {
+            padding: 60px 0 0 0;
+            height: 558px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        margin-bottom: 96px;
+    }
+
+    &__subtitle {
+        font-size: 19px !important;
+    }
+
+    &__img-box {
+        position: absolute;
+        bottom: -24px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 474px;
+        height: 561px;
+
+        @include before_480 {
+            bottom: -10px;
+            width: 172px;
+            height: 203px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}

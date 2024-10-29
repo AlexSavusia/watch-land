@@ -1,0 +1,311 @@
+.program-info {
+    background: #efefef;
+
+    &__container {
+        padding-bottom: 68px;
+        border-bottom: 1px solid #dbdddf;
+
+        @include before_480 {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-top: 88px;
+        margin-bottom: 64px;
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+
+        @include before_1024 {
+            gap: 53px;
+        }
+
+        @include before_768 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 49.77%;
+        border-radius: 24px;
+        max-width: 310px;
+        max-height: 331px;
+        flex-grow: 1;
+        border: 1px solid;
+        border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+        @include before_480 {
+            padding-bottom: 0%;
+            width: 152px;
+            height: 220px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        max-width: 186px;
+        max-height: 185px;
+
+        @include before_1200 {
+            max-width: 134px;
+            max-height: 133px;
+        }
+
+        @include before_480 {
+            position: relative;
+        }
+    }
+
+    &__content {
+        &--left {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(26px);
+            border-radius: 24px;
+            border: 1px solid;
+            border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+            @include before_1024 {
+                max-height: 320px;
+            }
+
+            @include before_480 {
+                flex-direction: column;
+                max-height: 100%;
+                padding: 20px;
+            }
+        }
+
+        &--right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 32px;
+            border: 1px solid;
+            border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+        }
+    }
+
+    &__content-text {
+        @include before_480 {
+            font-size: 17px !important;
+        }
+    }
+
+    &__services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 20px 30px 20px;
+        height: 100%;
+
+        @include before_480 {
+            padding: 26px;
+        }
+    }
+
+    &__services-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 63px 52px;
+        background: var(--color-half-white2);
+        border-radius: 24px;
+        // max-width: 618px;
+        border: 1px solid;
+        border-image-source: linear-gradient(102.19deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 102.25%);
+
+        @include before_1200 {
+            padding: 63px 28px;
+        }
+
+        @include before_1024 {
+            padding: 42px 25px;
+        }
+
+        @include before_480 {
+            padding: 30px 30px;
+            gap: 8px;
+        }
+    }
+
+    &__benefits-item {
+        display: flex;
+        align-items: center;
+
+        @include before_480 {
+            gap: 0;
+        }
+    }
+
+    &__benefits-text {
+        @include before_1024 {
+            font-size: 17px !important;
+        }
+
+        @include before_480 {
+            font-size: 15px !important;
+        }
+    }
+
+    &__marker {
+        display: inline-flex;
+        flex-shrink: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        margin-right: 15px;
+        background: var(--color-green5);
+    }
+
+    &__separator {
+        display: none;
+
+        @include before_1200 {
+            display: block;
+        }
+    }
+
+    &__separator-2 {
+        @include before_1024 {
+            display: none;
+        }
+    }
+
+    &__banner {
+        position: relative;
+        margin-top: 88px;
+    }
+
+    &__banner-imgBox {
+        position: relative;
+        padding-bottom: 28%;
+
+        @include before_1200 {
+            padding-bottom: 31%;
+        }
+
+        @include before_1024 {
+            padding-bottom: 33%;
+        }
+
+        @include before_768 {
+            padding-bottom: 35%;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding-bottom: 50%;
+        }
+
+        @include before_480 {
+            padding-bottom: 0;
+            height: 420px;
+        }
+    }
+
+    &__banner-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 60px;
+
+        @include before_768 {
+            border-radius: 40px;
+        }
+
+        @include before_480 {
+            border-radius: 35px;
+            object-position: bottom;
+            filter: brightness(60%);
+        }
+    }
+
+    &__banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        // width: 100%;
+        // max-width: 450px;
+
+        @include before_1024 {
+            gap: 16px;
+            // max-width: 390px;
+        }
+
+        @include before_768 {
+            gap: 15px;
+        }
+
+        @include before_480 {
+            top: 9%;
+            left: 7%;
+            padding-right: 10px;
+            // max-width: 290px;
+        }
+    }
+
+    &__banner-subtext {
+        @include before_480 {
+            max-width: 245px;
+        }
+    }
+
+    &__banner-link {
+        color: var(--color-white);
+        border: 2px solid var(--color-green5);
+        background-color: var(--color-green5);
+        max-width: 150px;
+        padding: 11px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 140%;
+        border-radius: 10px;
+        text-decoration: none;
+
+        @include before_768 {
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+
+    &__banner-br {
+        @include before_480 {
+            display: none;
+        }
+    }
+}
+
+.program {
+    background: #efefef;
+}

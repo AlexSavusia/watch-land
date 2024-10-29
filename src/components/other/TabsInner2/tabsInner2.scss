@@ -1,0 +1,129 @@
+@import '../../../assets/global-style/mixin';
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        @include before_1024 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    // &__list-2 {
+    //     display: flex;
+    //     align-self: flex-start;
+    //     background: var(--color-main);
+    //     gap: 16px;
+    //     margin-bottom: 68px;
+    // }
+
+    &__list-3 {
+        display: flex;
+        align-self: flex-start;
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+        margin-bottom: 45px;
+    }
+
+    &__nav {
+        background: rgba(255, 255, 255, 0.3);
+        padding: 40px 60px 0 60px;
+        border-radius: 24px;
+    }
+
+    &__name-2 {
+        padding: 14px 16px;
+        background: var(--color-half-white2);
+        border-radius: 24px;
+        cursor: pointer;
+
+        &.active {
+            color: var(--color-white);
+            background: var(--color-green5);
+        }
+    }
+
+    &__name-3 {
+        padding: 14px 22px;
+        min-width: 166px;
+        text-align: center;
+        cursor: pointer;
+        // transition: 0.5s;
+
+        &.active {
+            color: var(--color-black);
+            background: var(--color-green3);
+        }
+
+        &--blue {
+            border: 1px solid rgba(129, 142, 158, 0.4);
+            border-radius: 8px 0px 0px 8px;
+
+            &.active {
+                color: var(--color-white);
+                border: none;
+                background: #00adee;
+            }
+        }
+
+        &--half-blue {
+            border: 1px solid rgba(129, 142, 158, 0.4);
+            border-radius: 0px 8px 8px 0px;
+
+            &.active {
+                color: var(--color-white);
+                border: none;
+                background: #2baa7a;
+            }
+        }
+
+        &--green {
+            border: 1px solid rgba(129, 142, 158, 0.4);
+
+            &.active {
+                color: var(--color-white);
+                border: none;
+                background: var(--color-green5);
+            }
+        }
+
+        &--white {
+            border: none;
+
+            &.active {
+                font-weight: 600;
+                border: none;
+                background: var(--color--white);
+                color: var(--color-green2);
+
+                .tabs__name-icon {
+                    fill: var(--color-green2);
+                }
+            }
+        }
+
+        &--flex {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+    }
+
+    &__button {
+        justify-content: start;
+        margin-bottom: 50px;
+    }
+
+    &__right {
+        @include before_1024 {
+            margin-top: 12px;
+        }
+    }
+}

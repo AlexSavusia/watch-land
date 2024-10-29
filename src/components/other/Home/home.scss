@@ -1,0 +1,122 @@
+.home {
+    background: #efefef;
+
+    &__container {
+        // background: url('../../assets/img/pages/banner-background.png');
+        // padding: 40px 0 55px 0;
+        padding: 0 60px;
+        background: rgba(255, 255, 255, 0.3) url('../../assets/img/pages/banner-background.png') no-repeat right;
+        background-position-y: 5px;
+        backdrop-filter: blur(26px);
+        border-radius: 24px;
+        // background-size: cover;
+
+        @include before_1024 {
+            background: rgba(255, 255, 255, 0.3) url('../../assets/img/pages/back-1024.png') no-repeat right;
+            padding: 0 16px;
+        }
+
+        @include before_768 {
+            background: rgba(255, 255, 255, 0.3) url('../../assets/img/pages/back-768.png') no-repeat right;
+            padding: 0 16px;
+        }
+
+        @include before_480 {
+            background: rgba(255, 255, 255, 0.3) url('../../assets/img/pages/back-480.png') no-repeat right;
+            padding: 0 16px;
+        }
+    }
+
+    &__tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-top: 40px;
+        margin-bottom: 96px;
+
+        @include before_1200 {
+            gap: 16px;
+        }
+
+        @include before_480 {
+            margin-bottom: 40px;
+            gap: 12px;
+        }
+    }
+
+    &__tag {
+        flex-shrink: 0;
+        word-break: break-all;
+
+        @include before_480 {
+            font-size: 12px !important;
+            flex-shrink: unset;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+
+        @include before_768 {
+            font-size: 36px !important;
+        }
+
+        @include before_480 {
+            margin-bottom: 24px;
+            font-size: 24px !important;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 56px;
+
+        @include before_480 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__subtitle-text {
+        @include before_768 {
+            font-size: 24px !important;
+        }
+
+        @include before_480 {
+            font-size: 20px !important;
+        }
+    }
+
+    &__info {
+        margin-right: 30px;
+
+        @include before_768 {
+            margin-right: 0;
+        }
+    }
+
+    &__button-contianer {
+        margin-bottom: 104px;
+
+        @include before_480 {
+            margin-bottom: 83px;
+        }
+    }
+
+    // &__img-box {
+    //     background: url('../../assets/img/pages/home-background.png') no-repeat right;
+    //     background-position: bottom right 0;
+    //     width: 387px;
+    //     height: 401px;
+    // }
+
+    // &__img {
+    //     max-width: 337px;
+    //     max-height: 337px;
+    //     object-fit: contain;
+    //     object-position: center;
+    // }
+}

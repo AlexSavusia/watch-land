@@ -1,0 +1,17 @@
+@import '../../../assets/global-style/mixin';
+
+.form {
+    &__fieldset {
+        padding: 0;
+        border: none;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.js-form-hidden {
+        display: none;
+    }
+}
