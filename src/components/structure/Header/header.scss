@@ -1,11 +1,30 @@
 .header {
     padding: 40px 0;
-    background: #efefef;
+    background: url('../../assets/img/pages/backgound-img.png');
 
-    &__logo {
-        width: 300px;
-        height: 28px;
-        object-fit: contain;
-        object-position: center;
-    }
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		gap: 60px;
+		border-bottom: 1px solid var(--color-blue2);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		gap: 60px;
+		&-item {
+			padding: 35px 0;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24.3px;
+			cursor: pointer;
+			&.active {
+				font-weight: 700;
+				border-bottom: 2px solid var(--btn-primery-color);
+			}
+		}
+	}
 }
